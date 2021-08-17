@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+* {
+  font-family: "Fredoka One", cursive;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.section{
+  /* border-top: 10px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-parent {
+  background-color: rgb(26, 72, 124);
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.calc-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(6, 1fr); */
+  grid-gap: 1rem;
+}
+
+.display-div {
+  height: 12vh;
+  /* text-align: center; */
+  /* vertical-align: middle; */
+  width: 79%;
+  background-color: gray;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.inner {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+.btn {
+  background-color: rgb(93, 208, 228);
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sp-btn {
+  background-color: rgb(93, 208, 228);
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#calc-display {
+  display: inline-block;
+  word-wrap: normal;
+}
